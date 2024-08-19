@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0); /* Red with 50% opacity */
+
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.profile img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+}
+
+.hero-overlay h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.hero-overlay p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.hero-overlay button {
+    padding: 10px 25px;
+    margin-right: 15px;
+    background-color: #e50914;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.2em;
+    /* display: flex;
+    align-items: center; */
+}
+
+.hero-overlay button i {
+    margin-right: 10px;
+}
+
+/* Movies Section */
+.movies-section {
+    padding: 20px;
+}
+
+.movies-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.movies-slider {
+    position: relative;
+}
+
+.movies-grid {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+}
+
+.movies-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.movie img {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie img:hover {
+    transform: scale(1.1);
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.slider-button.prev {
+    left: 0;
+}
+
+.slider-button.next {
+    right: 0;
+}
+
+/* Footer Styles */
+.footer {
+    color: #fff;
+    padding: 40px 0;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    margin: 0 20px;
+    min-width: 150px;
+}
+
+.footer-column h3, .footer-column h4 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.footer-column a {
+    display: block;
+    margin: 5px 0;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.8em;
+    color: #b3b3b3;
+}
